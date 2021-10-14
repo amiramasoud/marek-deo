@@ -1,0 +1,760 @@
+*{
+    font-family: sans-serif
+}
+
+.cotainer{
+    margin: auto
+}
+::selection{
+    background-color: rgba(0, 0, 0, 0.585);
+    color: #FFFFFF
+}
+body{
+    overflow: hidden;
+}
+.spinner {
+    width: 40px;
+    height: 40px;
+  
+    position: relative;
+    margin: 100px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+
+/********************************************************** start header **********************************************************/
+a.arrow{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    color: #FFFFFF;
+    background-color: #000000;;
+    text-align: center;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all .4s ease;
+    display: none
+}
+a.arrow:hover{
+transform:  translateY(-20px)
+}
+
+#options{
+    position: fixed;
+    top:100px;
+    z-index: 777;
+}
+#colors-optins{
+    background-color: #4c4c4c;
+    border: 2px solid teal;
+    padding: 10px;
+    float: left
+}
+#colors-optins ul li{
+    width: 30px;
+    height:30px;
+    background-color: rgb(255, 157, 0);
+    display: inline-block;
+    cursor: pointer
+}
+#options i{
+    background-color: teal;
+    color: #fff;
+    padding: 10px;
+    float: left;
+    cursor: pointer;
+}
+#options img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.load
+{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    background-color: #4c4c4c;
+    z-index: 999999;
+}
+
+.navbar-nav .nav-item a{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1.1em 1em!important;
+    letter-spacing: 1px;
+    color: #ccc!important;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+@media(max-width: 767px){
+    .navbar {
+        background-color: rgb(248, 248, 248) !important;
+        padding: 20px;
+        box-shadow: 2px 2px 10px #4c4c4c;
+       
+}
+.navbar-nav .nav-item a{
+    color: #000 !important
+    
+}
+
+}
+
+
+ .navbar-nav .nav-item a:hover{
+    color: rgb(160, 153, 153) !important;
+ }
+
+ .navbar-toggler{
+    border:none;
+    outline: none !important
+ }
+
+
+ .header{
+    background-image: url('../imgs/banner.jpg');
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed
+ }
+
+ .header .sara  {
+     height :100%;
+     margin: 0
+ }
+ .header .sara h4{
+     color: #fff;
+     letter-spacing: 0.03em;
+     font-size: 15px;
+     margin-bottom: 22px;
+
+ }
+ .header .sara h1{
+    font-size: 47px;
+    line-height: 70px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    color: #fff
+ }
+
+@media(max-width: 767px){
+    .header .sara h1{
+        font-size: 35px;
+
+    }
+
+}
+ .header .sara a{
+     font-size: 13px;
+    background-color: #fff;
+    border: 2px solid transparent;
+    color: #000;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+    padding: 22px 39px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+
+ }
+ .header .sara a:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff
+ }
+ 
+/********************************************************** End header **********************************************************/
+
+
+ /********************************************************** start About **********************************************************/
+.about{
+    padding: 120px 0
+    }
+    .about  .no-two{
+        padding: 120px 0
+
+    }
+   
+    .about .profile_title{
+        font-size: 21px;
+        line-height: 34px;
+        letter-spacing: 0.03em;
+        font-weight: 600;
+    }
+    .about .profile_subtitle{
+        margin-top: 2px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 46px;
+    letter-spacing: 0.04em;
+    color: #000;
+    font-family: 'Poppins';
+    }
+    .about p{
+    color: #4c4c4c  ;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    margin: 0 0 15px;
+    font-family: 'Poppins';
+    font-size: 14px
+
+}
+@media(max-width: 576px){
+    .about .no-two{
+        margin-left: 50px
+    }
+}
+@media(max-width: 576px){
+    .about p{
+        padding-bottom: 20px;
+    }
+}
+.about .about-me-info h4 span {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.025em;
+    color: #000;
+    font-family: 'Poppins';
+    line-height: 1.5;
+    font-weight: bold
+}
+.about .about-me-info h4 {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.025em;
+    color: #000;
+    font-family: 'Poppins';
+    line-height: 1.5;
+    margin: 0 0 15px;
+}
+.about .no-two .btn-mine{
+    font-size: 12px;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+    padding: 22px 39px;
+    font-weight: bold;
+    letter-spacing: 0.11em; 
+    margin-top: 10px;
+    font-family:poppins;
+
+}
+.about .no-two .btn-mine:hover{
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff
+}
+    /********************************************************** End About **********************************************************/
+    /********************************************************** start portfolio **********************************************************/
+.portfolio{
+    background-color: #FBFBFB;
+    padding: 120px 0;
+}
+.portfolio .section-title h2 {
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 46px;
+    letter-spacing: 0.04em;
+    color: #000;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: bold !important;
+    padding-bottom: 20px
+}
+
+
+.portfolio ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: -10px;
+    cursor: pointer;
+    transition: all .5s ease;
+    margin: 30px 6px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+
+} 
+
+@media(max-width: 768px){
+    .portfolio ul li{
+        display:flex;
+      
+    
+    } 
+}
+
+
+.portfolio ul li.active{
+    background-color: rgb(0, 0, 0);
+    color: #FFFFFF
+}
+
+.portfolio ul li.active a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Poppins';
+
+}
+.portfolio ul li.not a{
+    color: rgb(0, 0, 0) !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Poppins';
+
+}
+.portfolio ul li.not{
+    transition:  all .5s ease-in-out
+}
+.portfolio ul li.not:hover{
+    background-color: rgb(0, 0, 0);
+}
+.portfolio ul li.not:hover a{
+color: #FFFFFF !important
+}
+
+.portfolio .imgcont{
+    position: relative;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+.portfolio .imgcont .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all .3s ease;
+    color: #FFFFFF;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.767);
+    opacity: 0;
+}
+@media(min-width:768px) and (max-width:990px){
+    .portfolio .imgcont .overlay{
+        width: 92.8%;
+
+    }
+}
+
+.portfolio .imgcont .overlay h4{
+opacity: 0;
+transition: all .5s ease-in-out .5s;
+font-family: 'Poppins';
+
+}
+.portfolio .imgcont:hover .overlay h4{
+    opacity: 1
+    }
+.portfolio .imgcont:hover .overlay{
+    opacity: 1
+
+    }
+.portfolio .port{
+    margin-top: 30px
+}
+    /********************************************************** End portfolio **********************************************************/
+    /********************************************************** start numbers**********************************************************/
+.numbers{
+    padding: 80px 0;
+    background-image: url('../imgs/facts_bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed
+}
+
+.numbers span{
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 47px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #fff;
+}
+.numbers h4{
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.025em;
+    color: #fff;
+
+}
+@media(max-width: 768px){
+    .num{
+        margin-bottom: 40px
+    }
+    
+}   
+ /********************************************************** End numbers**********************************************************/
+    /********************************************************** start services**********************************************************/
+.services{
+    padding: 120px 0
+}
+
+.services h2{
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 46px;
+    letter-spacing: 0.04em;
+    font-family:poppins;
+
+}
+.services h4{
+    line-height: 21px;
+    font-size: 14px;
+    font-family:poppins;
+
+}
+.services .services-info h4{
+    font-weight: 600;
+    margin-bottom: 18px;
+    font-family:poppins;
+
+}
+.services .services-info p{
+    color: #4c4c4c;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    font-family:poppins;
+    font-size: 14px
+
+}
+
+
+
+    /********************************************************** End services**********************************************************/
+    /********************************************************** start client**********************************************************/
+.client{
+padding: 100px 0;
+background-image: url('../imgs/testimonials_bg.jpg');
+background-attachment: fixed;
+background-position: center center;
+background-size: cover;
+
+}
+.client .item-description{
+    color: #fff;
+    margin-right: 20px;
+    width: 70%;
+    margin: auto;
+    font-family:poppins;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+
+}
+@media(max-width: 768px){
+    .client .item-description{
+width: 100%;
+margin: auto;
+font-size: 14px
+}
+    
+}
+
+.client h4{
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.025em;
+    font-family:poppins;
+
+}
+.client h4 span{
+    color: #ccc;
+    font-weight: 600;
+}
+.client .carousel-indicators li{
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
+    background-color: #7f7f7f;
+    margin-right: 10px
+}
+.client .carousel-indicators li.active{
+
+    background-color: #fff
+}
+.client .carousel-indicators li:hover{
+  
+    background-color: #fff
+}
+
+    /********************************************************** End client**********************************************************/
+    /********************************************************** start logos**********************************************************/
+.logos{
+    background-color: #191919;
+    padding: 90px 0
+}
+
+.logos img{
+   max-width: 60%
+}
+
+@media(max-width: 992px){
+    .logos img{
+margin-bottom: 40px;
+    }
+    
+}
+
+    /********************************************************** End logos**********************************************************/
+    /********************************************************** start blog**********************************************************/
+.blog{
+    padding: 80px 0;
+    background-color: #FBFBFB;
+}
+
+.blog h2{
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 46px;
+    letter-spacing: 0.04em;
+    font-family:poppins;
+
+}
+.blog .blog-title h4{
+    line-height: 21px;
+    font-size: 14px;
+    font-family:poppins;
+    padding-bottom: 70px
+}
+
+.blog .post-meta{
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #4c4c4c;
+}
+.blog .post-meta a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+    font-size: 14px;
+
+
+}
+.blog .post-title a{
+    text-decoration: none;
+
+}
+.blog .post-title a h4{
+    color: #4c4c4c;
+    font-weight: 600;
+    font-size: 14px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+     transition: all 0.4s ease;
+     line-height: 1.5;
+}
+.blog .post-title a h4:hover{
+    color: #000
+}
+
+.blog .blog-button a{
+    margin-top: 44px;
+    font-size: 13px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid transparent;
+    color: rgb(255, 255, 255);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+    padding: 22px 39px;
+    font-weight: bold;
+    letter-spacing: 0.11em;
+}
+.blog .blog-button a:hover{
+    background-color: #fff;
+    border: 2px solid rgb(0, 0, 0);
+    color: #000
+}
+.blog .layer .img-cont{
+    overflow: hidden ;
+}
+.blog .layer .img-cont img{
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.6s ease-in-out;
+    margin-bottom: 33px;
+    overflow: hidden;
+}
+@media(max-width:768px){
+    .blog .layer{
+margin: auto;
+width: 70%;
+
+    }
+    .blog .layer .img-cont{
+        margin-top: 40px
+
+    }
+    .blog .layer .img-cont img {
+        width:100%;
+    }
+}
+@media(min-width:992px){
+    .blog .layer img:hover{
+        transform: scale(1.2 , 1.2);
+    }
+}
+
+    /********************************************************** End blog**********************************************************/
+        /********************************************************** start contact**********************************************************/
+
+.contact{
+    padding: 190px 0;
+}
+.contact  h2{
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 46px;
+    letter-spacing: 0.04em;
+    font-family:poppins;
+
+}
+.contact .first{
+    line-height: 21px;
+    font-size: 14px;
+    font-family:poppins;
+    padding-bottom: 90px
+}
+
+.contact .pic{
+    background-image: url('../imgs/about.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 70vh;
+    padding: 0;
+}
+.contact  .over{
+    height:100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.544);
+}
+
+.contact input{
+    color: #4c4c4c;
+    font-size: 14px;
+    background-color: #FBFBFB;
+margin-top: 10px;
+    height: 58px;
+
+}
+.contact .form-control:focus{
+        border: 2px solid #b01d1b;
+        -webkit-box-shadow: none;
+        -moz-webkit-box-shadow: none;
+        box-shadow: none;
+    }
+ .contact textarea{
+        margin: 25px 0 ;
+        color: #4c4c4c;
+        font-size: 14px;
+        height: 180px;
+}
+.contact button{
+    font-size: 12px;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+    padding: 22px 39px;
+    font-weight: bold;
+    letter-spacing: 0.11em; 
+    margin-top: 10px;
+    font-family:poppins;
+
+}
+.contact button:hover{
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff
+}
+        /********************************************************** End contact**********************************************************/
+        /********************************************************** start footer**********************************************************/
+.footer{
+    background-color: #191919;
+    padding: 90px 0
+
+}
+.footer .row{
+    margin: 0;
+}
+
+.footer .social_ico i{
+    margin-right: 33px;
+    text-align: center ;
+    color: #7f7f7f;
+    font-size: 19px;
+    font-weight: 800;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+
+}
+.footer .social_ico i:hover{
+    color: #fff
+}
+.footer p{
+
+
+margin: 24px 0 0 0;
+color: #7f7f7f;
+font-size: 14px;
+letter-spacing: 0.1em;
+font-family:poppins;
+
+
+}
+@media(max-width:992px){
+  .footer{
+       padding:60px 0
+    }
+}        /********************************************************** End footer**********************************************************/
